@@ -35,16 +35,14 @@ function tiferet_scripts_styles()
     if (is_page('galeria')) {
         wp_enqueue_style('lightboxcss', get_template_directory_uri() . '/css/lightbox.min.css', array(), '2.11.3');
     }
-
     if (is_front_page()) {
         wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', array(), '8.4.5');
     }
-
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize'), '1.0.0');
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0');
     wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '5.0.2');
     wp_enqueue_style('Material-Icons','https://fonts.googleapis.com/icon?family=Material+Icons');
-    wp_enqueue_style('styles', get_template_directory_uri() . '/css/styles.css', array(), '1');
+    wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array(), '1');
     // Archivos JS
         if (is_page('galeria')) {
             wp_enqueue_script('lightboxjs', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '2.11.3', true);
@@ -84,7 +82,7 @@ function tiferet_contacto_shortcode()
     ?>
     <div class="contenedor contenido-centrado">
         <?php
-        echo do_shortcode('sin generar');
+        echo do_shortcode('[contact-form-7 id="0f2f087" title="Contacto"]');
         ?>
     </div>
     <?php

@@ -1,5 +1,5 @@
 function gymWordPress() {
-    if(document.querySelector('.swiper')) {
+   /* if(document.querySelector('.swiper')) {
         const opciones = {
             loop: true,
             autoplay: {
@@ -8,7 +8,7 @@ function gymWordPress() {
         }
         new Swiper('.swiper', opciones);
     }
-
+*/
   
     const hamburger = document.querySelector('.hamburguer-menu svg')
     hamburger.addEventListener('click', function() {
@@ -31,8 +31,8 @@ window.onscroll = function() {
    }
 }
 
-const usuario = document.querySelector('.menu-item-204')
+/*const usuario = document.querySelector('.menu-item-204')
 usuario.addEventListener('click', function() {
     const submenu = document.querySelector('ul .sub-menu');
     submenu.classList.toggle('vermenu');
-})
+})*/

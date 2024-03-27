@@ -1,19 +1,19 @@
 <?php
-get_header();
+get_template_part('parts/header')
 ?>
 
 
 <main>
     <article class="color0  p-3">
         <div class="container-fluid pt-3 mlr-3">
-            <?php require get_template_directory() . '/components/services.php';?>
+            <?php require get_template_directory() . '/parts/services.php';?>
         </div>
     </article>
 
     <article class="color3 p-3">
         <h2 class="text-center display-4" >HaShavua</h2>
         <div class="container-fluid ">
-            <?php require get_template_directory() . '/components/hashavua.php';?>
+            <?php require get_template_directory() . '/parts/hashavua.php';?>
         </div>
     </article>
 
@@ -59,7 +59,7 @@ get_header();
 
       <div class="container p4">
         <h2 class="text-center display-4 m5">Escribenos</h2>
-        <?php anCharry_contacto_shortcode(); ?>
+        <?php tiferet_contacto_shortcode(); ?>
       </div>
 
     </article>
@@ -67,5 +67,5 @@ get_header();
 </main>
 
 <?php
-get_footer();
+get_template_part('parts/footer')
 ?>
